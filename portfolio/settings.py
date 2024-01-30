@@ -23,7 +23,12 @@ print(BASE_DIR)
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # email send
-
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'dealleadonline@gmail.com'
+EMAIL_HOST_PASSWORD = 'nrapppngvwextecy'
+EMAIL_USE_TLS = True  # or False if you're using SSL
+DEFAULT_FROM_EMAIL = 'dealleadonline@gmail.com'
 
 # def send_mail( email, message):
 #     subject = "OTP for reset password "
@@ -52,10 +57,7 @@ SECRET_KEY = 'django-insecure-&v)z-b($-+h(_kugig%_66(#3@xht29_llzl@jfsz^621+prh_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',
-                 '52a6-2402-3a80-1bd0-abc9-9d79-9380-4389-19eb.in.ngrok.io',
-                 '127.0.0.1'
-                 ]
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://52a6-2402-3a80-1bd0-abc9-9d79-9380-4389-19eb.in.ngrok.io'
